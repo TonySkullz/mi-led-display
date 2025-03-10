@@ -1,58 +1,28 @@
-# Merkury Innovations Matrix LED Display SDK
+# Merkury Innovations Matrix LED Display SDK [*MODIFIED*]
 
-This project provides a set of Python scripts to interface with the Merkury Innovations Multicolor Matrix LED Display. This product is available at [Walmart](https://www.walmart.com/ip/Merkury-Innovations-Bluetooth-Matrix-LED-Pixel-Display/5150283693). The purpose of this project is to reverse engineer the communication protocol to allow developers to create custom applications for this device. The model number of the display is MI-LNL62-999W.
+This project is a fork of https://github.com/offe/mi-led-display
 
-## Repository Contents
+Please check the README there for full information.
 
-- `draw_picture.py`: Script to draw a static picture on the display.
-- `draw_pixels.py`: Script to send color data to individual pixels on the display.
-- `draw_file.py` : Script to load a static file and send to picture to the display
-- `index.html`: Web-based attempt to connect to the display (note: does not work due to service listing issues in browsers for this hardware).
+## Added Contents
 
-## Getting Started
+- `draw_gif.py`: Script to display an animated gif
 
-You can try it in your browser:
-[Grafitti](https://htmlpreview.github.io/?https://github.com/offe/mi-led-display/blob/main/grafitti.html)
-[Show image](https://htmlpreview.github.io/?https://github.com/offe/mi-led-display/blob/main/show_image.html)
+### Planned Additions
+
+- 'gallery.py`: Script to play a folder of images with specified delay
 
 ### Prerequisites
 
-Ensure you have Python 3.7 or higher installed on your system. You can verify this by running:
-
-```bash
-python3 --version
-```
-
-### Installation
-
-Clone this repository locally and navigate into the project directory:
-
-```bash
-git clone https://github.com/yourusername/mi-led-display.git
-cd mi-led-display
-```
-
-Install the required Python libraries using pip:
-
-```bash
-python3 -m venv venv
-python3 -m pip install bleak
-python3 -m pip install pil
-```
+Ensure you have Python 3.7 or higher installed on your system. 
 
 ### Running the Scripts
 
 To run the scripts, use the following commands:
 
 ```bash
-python3 draw_picture.py
-python3 draw_pixels.py
-python3 draw_file.py /path/to/image.png
+python3 draw_gif.py /path/to/image.png
 ```
-
-## Collecting Bluetooth Snoop Logs
-
-Instructions for collecting Bluetooth snoop logs are also provided to assist with further development and debugging. See `snoop_instructions.md` for details.
 
 ## License
 
