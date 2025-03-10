@@ -10,7 +10,7 @@ Please check the README there for full information.
 
 ### Planned Additions
 
-- 'gallery.py`: Script to play a folder of images with specified delay
+- `gallery.py`: Script to play a folder of images with specified delay
 
 ### Prerequisites
 
