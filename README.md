@@ -21,7 +21,7 @@ Ensure you have Python 3.7 or higher installed on your system.
 To run the scripts, use the following commands:
 
 ```bash
-python3 draw_gif.py /path/to/image.png
+python3 draw_gif.py /path/to/image.gif
 ```
 
 ## License
